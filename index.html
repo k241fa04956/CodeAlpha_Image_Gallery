@@ -1,0 +1,1501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Vision Gallery - Interactive Image Gallery built with HTML, CSS and JavaScript."
+    >
+
+    <title>Vision Gallery | CodeAlpha</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- ================================
+         NAVBAR
+    ================================= -->
+
+    <header class="navbar">
+
+        <a href="#home" class="logo">
+
+            <div class="logo-icon">
+                V
+            </div>
+
+            <div class="logo-text">
+
+                <strong>Vision</strong>
+
+                <span>Gallery</span>
+
+            </div>
+
+        </a>
+
+
+        <nav class="nav-links">
+
+            <a href="#home">
+                Home
+            </a>
+
+            <a href="#gallery">
+                Gallery
+            </a>
+
+            <a href="#about">
+                About
+            </a>
+
+        </nav>
+
+
+        <button
+            class="theme-btn"
+            id="themeBtn"
+            aria-label="Toggle theme"
+        >
+            ◐
+        </button>
+
+    </header>
+
+
+
+    <!-- ================================
+         MAIN
+    ================================= -->
+
+    <main>
+
+
+        <!-- ================================
+             HERO
+        ================================= -->
+
+        <section
+            class="hero"
+            id="home"
+        >
+
+
+            <div class="hero-content">
+
+
+                <div class="hero-badge">
+
+                    <span class="status-dot"></span>
+
+                    CODEALPHA FRONTEND PROJECT
+
+                </div>
+
+
+                <h1>
+
+                    Moments That
+
+                    <span>Tell Stories.</span>
+
+                </h1>
+
+
+                <p class="hero-description">
+
+                    Explore a curated collection of nature,
+                    city, travel, wildlife and architectural
+                    photography through an interactive
+                    gallery experience.
+
+                </p>
+
+
+                <div class="hero-buttons">
+
+                    <a
+                        href="#gallery"
+                        class="primary-btn"
+                    >
+
+                        Explore Gallery
+
+                        <span>
+                            →
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="#about"
+                        class="secondary-btn"
+                    >
+
+                        Learn More
+
+                    </a>
+
+                </div>
+
+
+                <div class="hero-features">
+
+                    <div>
+
+                        <strong>
+                            15
+                        </strong>
+
+                        <span>
+                            Images
+                        </span>
+
+                    </div>
+
+
+                    <div>
+
+                        <strong>
+                            05
+                        </strong>
+
+                        <span>
+                            Categories
+                        </span>
+
+                    </div>
+
+
+                    <div>
+
+                        <strong>
+                            100%
+                        </strong>
+
+                        <span>
+                            Responsive
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- HERO GLASS CARD -->
+
+            <div class="hero-visual">
+
+
+                <div class="glass-orb orb-one"></div>
+
+                <div class="glass-orb orb-two"></div>
+
+
+                <div class="glass-panel">
+
+
+                    <div class="glass-panel-top">
+
+                        <span>
+                            VISION
+                        </span>
+
+                        <span>
+                            01 — 15
+                        </span>
+
+                    </div>
+
+
+                    <div class="glass-image">
+
+                        <img
+                            src="images/nature1.jpg"
+                            alt="Mountain landscape"
+                        >
+
+                        <div class="glass-image-overlay"></div>
+
+
+                        <div class="glass-image-content">
+
+                            <span>
+                                NATURE COLLECTION
+                            </span>
+
+                            <h3>
+                                Mountain Escape
+                            </h3>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="glass-panel-bottom">
+
+                        <span>
+                            EXPLORE
+                        </span>
+
+                        <span class="glass-arrow">
+                            ↗
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="glass-mini-card mini-one">
+
+                    <span>
+                        01
+                    </span>
+
+                    <strong>
+                        Nature
+                    </strong>
+
+                </div>
+
+
+                <div class="glass-mini-card mini-two">
+
+                    <span>
+                        04
+                    </span>
+
+                    <strong>
+                        Animals
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================================
+             GALLERY
+        ================================= -->
+
+        <section
+            class="gallery-section"
+            id="gallery"
+        >
+
+
+            <div class="section-header">
+
+
+                <div class="section-heading">
+
+                    <span class="section-tag">
+                        VISUAL COLLECTION
+                    </span>
+
+                    <h2>
+                        Explore the Gallery
+                    </h2>
+
+                    <p>
+                        Discover moments captured across
+                        nature, cities, journeys, wildlife
+                        and architecture.
+                    </p>
+
+                </div>
+
+
+                <div class="gallery-stats">
+
+
+                    <div class="stat">
+
+                        <strong id="totalCount">
+                            15
+                        </strong>
+
+                        <span>
+                            Images
+                        </span>
+
+                    </div>
+
+
+                    <div class="stat">
+
+                        <strong>
+                            05
+                        </strong>
+
+                        <span>
+                            Categories
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- FILTER AND SEARCH -->
+
+            <div class="gallery-controls">
+
+
+                <div class="filter-buttons">
+
+
+                    <button
+                        class="filter-btn active"
+                        data-filter="all"
+                    >
+                        All
+                    </button>
+
+
+                    <button
+                        class="filter-btn"
+                        data-filter="nature"
+                    >
+                        Nature
+                    </button>
+
+
+                    <button
+                        class="filter-btn"
+                        data-filter="city"
+                    >
+                        City
+                    </button>
+
+
+                    <button
+                        class="filter-btn"
+                        data-filter="travel"
+                    >
+                        Travel
+                    </button>
+
+
+                    <button
+                        class="filter-btn"
+                        data-filter="animals"
+                    >
+                        Animals
+                    </button>
+
+
+                    <button
+                        class="filter-btn"
+                        data-filter="architecture"
+                    >
+                        Architecture
+                    </button>
+
+
+                    <button
+                        class="filter-btn"
+                        data-filter="favorites"
+                    >
+                        ♥ Favorites
+                    </button>
+
+                </div>
+
+
+
+                <div class="gallery-tools">
+
+
+                    <div class="search-box">
+
+                        <span>
+                            ⌕
+                        </span>
+
+                        <input
+                            type="text"
+                            id="searchInput"
+                            placeholder="Search images..."
+                            autocomplete="off"
+                        >
+
+                    </div>
+
+
+                    <select id="sortSelect">
+
+                        <option value="default">
+                            Sort: Default
+                        </option>
+
+                        <option value="az">
+                            Name: A - Z
+                        </option>
+
+                        <option value="za">
+                            Name: Z - A
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================================
+                 GALLERY GRID
+            ================================= -->
+
+
+            <div
+                class="gallery-grid"
+                id="galleryGrid"
+            >
+
+
+                <!-- NATURE 1 -->
+
+                <article
+                    class="gallery-card"
+                    data-category="nature"
+                    data-title="Mountain Escape"
+                >
+
+                    <div class="image-container">
+
+                        <img
+                            src="images/nature1.jpg"
+                            alt="Mountain landscape"
+                            loading="lazy"
+                        >
+
+                        <span class="image-number">
+                            01
+                        </span>
+
+                        <button
+                            class="favorite-btn"
+                            aria-label="Favorite Mountain Escape"
+                        >
+                            ♡
+                        </button>
+
+                        <div class="image-overlay">
+
+                            <div>
+
+                                <span>
+                                    Nature
+                                </span>
+
+                                <h3>
+                                    Mountain Escape
+                                </h3>
+
+                            </div>
+
+                            <button class="view-btn">
+                                View
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- NATURE 2 -->
+
+                <article
+                    class="gallery-card"
+                    data-category="nature"
+                    data-title="Forest Dreams"
+                >
+
+                    <div class="image-container">
+
+                        <img
+                            src="images/nature2.jpg"
+                            alt="Green forest"
+                            loading="lazy"
+                        >
+
+                        <span class="image-number">
+                            02
+                        </span>
+
+                        <button
+                            class="favorite-btn"
+                            aria-label="Favorite Forest Dreams"
+                        >
+                            ♡
+                        </button>
+
+                        <div class="image-overlay">
+
+                            <div>
+
+                                <span>
+                                    Nature
+                                </span>
+
+                                <h3>
+                                    Forest Dreams
+                                </h3>
+
+                            </div>
+
+                            <button class="view-btn">
+                                View
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- NATURE 3 -->
+
+                <article
+                    class="gallery-card"
+                    data-category="nature"
+                    data-title="Peaceful Lake"
+                >
+
+                    <div class="image-container">
+
+                        <img
+                            src="images/nature3.jpg"
+                            alt="Peaceful lake"
+                            loading="lazy"
+                        >
+
+                        <span class="image-number">
+                            03
+                        </span>
+
+                        <button
+                            class="favorite-btn"
+                            aria-label="Favorite Peaceful Lake"
+                        >
+                            ♡
+                        </button>
+
+                        <div class="image-overlay">
+
+                            <div>
+
+                                <span>
+                                    Nature
+                                </span>
+
+                                <h3>
+                                    Peaceful Lake
+                                </h3>
+
+                            </div>
+
+                            <button class="view-btn">
+                                View
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- CITY 1 -->
+
+                <article
+                    class="gallery-card"
+                    data-category="city"
+                    data-title="Urban Lights"
+                >
+
+                    <div class="image-container">
+
+                        <img
+                            src="images/city1.jpg"
+                            alt="Modern city lights"
+                            loading="lazy"
+                        >
+
+                        <span class="image-number">
+                            04
+                        </span>
+
+                        <button
+                            class="favorite-btn"
+                            aria-label="Favorite Urban Lights"
+                        >
+                            ♡
+                        </button>
+
+                        <div class="image-overlay">
+
+                            <div>
+
+                                <span>
+                                    City
+                                </span>
+
+                                <h3>
+                                    Urban Lights
+                                </h3>
+
+                            </div>
+
+                            <button class="view-btn">
+                                View
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- CITY 2 -->
+
+                <article
+                    class="gallery-card"
+                    data-category="city"
+                    data-title="City Skyline"
+                >
+
+                    <div class="image-container">
+
+                        <img
+                            src="images/city2.jpg"
+                            alt="City skyline"
+                            loading="lazy"
+                        >
+
+                        <span class="image-number">
+                            05
+                        </span>
+
+                        <button
+                            class="favorite-btn"
+                            aria-label="Favorite City Skyline"
+                        >
+                            ♡
+                        </button>
+
+                        <div class="image-overlay">
+
+                            <div>
+
+                                <span>
+                                    City
+                                </span>
+
+                                <h3>
+                                    City Skyline
+                                </h3>
+
+                            </div>
+
+                            <button class="view-btn">
+                                View
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- CITY 3 -->
+
+                <article
+                    class="gallery-card"
+                    data-category="city"
+                    data-title="Street Stories"
+                >
+
+                    <div class="image-container">
+
+                        <img
+                            src="images/city3.jpg"
+                            alt="City street"
+                            loading="lazy"
+                        >
+
+                        <span class="image-number">
+                            06
+                        </span>
+
+                        <button
+                            class="favorite-btn"
+                            aria-label="Favorite Street Stories"
+                        >
+                            ♡
+                        </button>
+
+                        <div class="image-overlay">
+
+                            <div>
+
+                                <span>
+                                    City
+                                </span>
+
+                                <h3>
+                                    Street Stories
+                                </h3>
+
+                            </div>
+
+                            <button class="view-btn">
+                                View
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- TRAVEL 1 -->
+
+                <article
+                    class="gallery-card"
+                    data-category="travel"
+                    data-title="New Adventures"
+                >
+
+                    <div class="image-container">
+
+                        <img
+                            src="images/travel1.jpg"
+                            alt="Travel destination"
+                            loading="lazy"
+                        >
+
+                        <span class="image-number">
+                            07
+                        </span>
+
+                        <button
+                            class="favorite-btn"
+                            aria-label="Favorite New Adventures"
+                        >
+                            ♡
+                        </button>
+
+                        <div class="image-overlay">
+
+                            <div>
+
+                                <span>
+                                    Travel
+                                </span>
+
+                                <h3>
+                                    New Adventures
+                                </h3>
+
+                            </div>
+
+                            <button class="view-btn">
+                                View
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- TRAVEL 2 -->
+
+                <article
+                    class="gallery-card"
+                    data-category="travel"
+                    data-title="Hidden Paradise"
+                >
+
+                    <div class="image-container">
+
+                        <img
+                            src="images/travel2.jpg"
+                            alt="Hidden travel paradise"
+                            loading="lazy"
+                        >
+
+                        <span class="image-number">
+                            08
+                        </span>
+
+                        <button
+                            class="favorite-btn"
+                            aria-label="Favorite Hidden Paradise"
+                        >
+                            ♡
+                        </button>
+
+                        <div class="image-overlay">
+
+                            <div>
+
+                                <span>
+                                    Travel
+                                </span>
+
+                                <h3>
+                                    Hidden Paradise
+                                </h3>
+
+                            </div>
+
+                            <button class="view-btn">
+                                View
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- TRAVEL 3 -->
+
+                <article
+                    class="gallery-card"
+                    data-category="travel"
+                    data-title="Journey Begins"
+                >
+
+                    <div class="image-container">
+
+                        <img
+                            src="images/travel3.jpg"
+                            alt="Travel scenery"
+                            loading="lazy"
+                        >
+
+                        <span class="image-number">
+                            09
+                        </span>
+
+                        <button
+                            class="favorite-btn"
+                            aria-label="Favorite Journey Begins"
+                        >
+                            ♡
+                        </button>
+
+                        <div class="image-overlay">
+
+                            <div>
+
+                                <span>
+                                    Travel
+                                </span>
+
+                                <h3>
+                                    Journey Begins
+                                </h3>
+
+                            </div>
+
+                            <button class="view-btn">
+                                View
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- ANIMALS 1 -->
+
+                <article
+                    class="gallery-card"
+                    data-category="animals"
+                    data-title="Wild Spirit"
+                >
+
+                    <div class="image-container">
+
+                        <img
+                            src="images/animals1.jpg"
+                            alt="Wild animal in nature"
+                            loading="lazy"
+                        >
+
+                        <span class="image-number">
+                            10
+                        </span>
+
+                        <button
+                            class="favorite-btn"
+                            aria-label="Favorite Wild Spirit"
+                        >
+                            ♡
+                        </button>
+
+                        <div class="image-overlay">
+
+                            <div>
+
+                                <span>
+                                    Animals
+                                </span>
+
+                                <h3>
+                                    Wild Spirit
+                                </h3>
+
+                            </div>
+
+                            <button class="view-btn">
+                                View
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- ANIMALS 2 -->
+
+                <article
+                    class="gallery-card"
+                    data-category="animals"
+                    data-title="Forest Wildlife"
+                >
+
+                    <div class="image-container">
+
+                        <img
+                            src="images/animals2.jpg"
+                            alt="Wildlife in forest"
+                            loading="lazy"
+                        >
+
+                        <span class="image-number">
+                            11
+                        </span>
+
+                        <button
+                            class="favorite-btn"
+                            aria-label="Favorite Forest Wildlife"
+                        >
+                            ♡
+                        </button>
+
+                        <div class="image-overlay">
+
+                            <div>
+
+                                <span>
+                                    Animals
+                                </span>
+
+                                <h3>
+                                    Forest Wildlife
+                                </h3>
+
+                            </div>
+
+                            <button class="view-btn">
+                                View
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- ANIMALS 3 -->
+
+                <article
+                    class="gallery-card"
+                    data-category="animals"
+                    data-title="Gentle Souls"
+                >
+
+                    <div class="image-container">
+
+                        <img
+                            src="images/animals3.jpg"
+                            alt="Beautiful animal"
+                            loading="lazy"
+                        >
+
+                        <span class="image-number">
+                            12
+                        </span>
+
+                        <button
+                            class="favorite-btn"
+                            aria-label="Favorite Gentle Souls"
+                        >
+                            ♡
+                        </button>
+
+                        <div class="image-overlay">
+
+                            <div>
+
+                                <span>
+                                    Animals
+                                </span>
+
+                                <h3>
+                                    Gentle Souls
+                                </h3>
+
+                            </div>
+
+                            <button class="view-btn">
+                                View
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- ARCHITECTURE 1 -->
+
+                <article
+                    class="gallery-card"
+                    data-category="architecture"
+                    data-title="Modern Design"
+                >
+
+                    <div class="image-container">
+
+                        <img
+                            src="images/architecture1.jpg"
+                            alt="Modern architecture"
+                            loading="lazy"
+                        >
+
+                        <span class="image-number">
+                            13
+                        </span>
+
+                        <button
+                            class="favorite-btn"
+                            aria-label="Favorite Modern Design"
+                        >
+                            ♡
+                        </button>
+
+                        <div class="image-overlay">
+
+                            <div>
+
+                                <span>
+                                    Architecture
+                                </span>
+
+                                <h3>
+                                    Modern Design
+                                </h3>
+
+                            </div>
+
+                            <button class="view-btn">
+                                View
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- ARCHITECTURE 2 -->
+
+                <article
+                    class="gallery-card"
+                    data-category="architecture"
+                    data-title="Urban Structure"
+                >
+
+                    <div class="image-container">
+
+                        <img
+                            src="images/architecture2.jpg"
+                            alt="Urban architecture"
+                            loading="lazy"
+                        >
+
+                        <span class="image-number">
+                            14
+                        </span>
+
+                        <button
+                            class="favorite-btn"
+                            aria-label="Favorite Urban Structure"
+                        >
+                            ♡
+                        </button>
+
+                        <div class="image-overlay">
+
+                            <div>
+
+                                <span>
+                                    Architecture
+                                </span>
+
+                                <h3>
+                                    Urban Structure
+                                </h3>
+
+                            </div>
+
+                            <button class="view-btn">
+                                View
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- ARCHITECTURE 3 -->
+
+                <article
+                    class="gallery-card"
+                    data-category="architecture"
+                    data-title="Creative Spaces"
+                >
+
+                    <div class="image-container">
+
+                        <img
+                            src="images/architecture3.jpg"
+                            alt="Creative architecture"
+                            loading="lazy"
+                        >
+
+                        <span class="image-number">
+                            15
+                        </span>
+
+                        <button
+                            class="favorite-btn"
+                            aria-label="Favorite Creative Spaces"
+                        >
+                            ♡
+                        </button>
+
+                        <div class="image-overlay">
+
+                            <div>
+
+                                <span>
+                                    Architecture
+                                </span>
+
+                                <h3>
+                                    Creative Spaces
+                                </h3>
+
+                            </div>
+
+                            <button class="view-btn">
+                                View
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+
+
+            <!-- NO RESULTS -->
+
+            <div
+                class="no-results"
+                id="noResults"
+            >
+
+                <div class="no-results-icon">
+                    ⌕
+                </div>
+
+                <h3>
+                    No images found
+                </h3>
+
+                <p>
+                    Try another search or select another category.
+                </p>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- ================================
+             ABOUT
+        ================================= -->
+
+        <section
+            class="about-section"
+            id="about"
+        >
+
+            <div class="about-card">
+
+
+                <div class="about-icon">
+                    ✦
+                </div>
+
+
+                <div>
+
+                    <span class="section-tag">
+                        ABOUT THIS PROJECT
+                    </span>
+
+
+                    <h2>
+                        Interactive photography,
+                        built with frontend technologies.
+                    </h2>
+
+
+                    <p>
+                        Vision Gallery is a responsive image
+                        gallery created using HTML, CSS and
+                        JavaScript. It includes category
+                        filtering, image search, sorting,
+                        favorites, lightbox navigation,
+                        keyboard controls, touch gestures,
+                        download functionality and responsive
+                        layouts.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- ================================
+         LIGHTBOX
+    ================================= -->
+
+    <div
+        class="lightbox"
+        id="lightbox"
+    >
+
+
+        <div
+            class="lightbox-backdrop"
+            id="lightboxBackdrop"
+        ></div>
+
+
+        <div class="lightbox-container">
+
+
+            <button
+                class="lightbox-close"
+                id="closeLightbox"
+                aria-label="Close gallery"
+            >
+                ×
+            </button>
+
+
+            <button
+                class="lightbox-arrow previous"
+                id="previousBtn"
+                aria-label="Previous image"
+            >
+                ‹
+            </button>
+
+
+            <div class="lightbox-image-wrapper">
+
+                <img
+                    id="lightboxImage"
+                    src=""
+                    alt=""
+                >
+
+            </div>
+
+
+            <button
+                class="lightbox-arrow next"
+                id="nextBtn"
+                aria-label="Next image"
+            >
+                ›
+            </button>
+
+
+            <div class="lightbox-details">
+
+
+                <div>
+
+                    <span id="lightboxCategory">
+                        Category
+                    </span>
+
+                    <h2 id="lightboxTitle">
+                        Image Title
+                    </h2>
+
+                </div>
+
+
+                <div
+                    class="lightbox-counter"
+                    id="lightboxCounter"
+                >
+                    01 / 15
+                </div>
+
+            </div>
+
+
+            <div class="lightbox-actions">
+
+
+                <button id="lightboxFavorite">
+                    ♡ Favorite
+                </button>
+
+
+                <button id="downloadBtn">
+                    ↓ Download
+                </button>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ================================
+         FOOTER
+    ================================= -->
+
+    <footer>
+
+
+        <div class="footer-logo">
+
+            <div class="logo-icon">
+                V
+            </div>
+
+            <strong>
+                Vision Gallery
+            </strong>
+
+        </div>
+
+
+        <p>
+            CodeAlpha Frontend Development Internship
+        </p>
+
+
+        <span>
+            Built with HTML • CSS • JavaScript
+        </span>
+
+    </footer>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
